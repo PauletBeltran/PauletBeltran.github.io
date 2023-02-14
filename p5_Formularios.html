@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body bgcolor="lightblue">
+    <h1>Formularios HTML</h1>
+    <label for="nombre">Nombre del alumno:</label>
+    <input type="text" placeholder="Introduce tu nombre" required><br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" placeholder="Introduce tu edad" required><br><br>
+
+    <label for="fecha">Fecha de nacimiento</label>
+    <input type="date" required> <br><br>
+
+    <input type="radio" name="sexo" required> Femenino
+    <input type="radio" name="sexo" required> Masculino <br><br> 
+
+    <label for="direccion">Ingresa tu dirección:</label><br>
+    <textarea name="direccion" id="" cols="20" rows="5" placeholder="Ingresa tu dirección"></textarea><br><br> 
+
+    <label for="escuela">Selecciona tu escuela:</label>
+    <select name="escuela" id="">
+        <option value="cetis">Escuela </option>
+        <option value="cetis">CETIS 107</option>
+        <option value="cbtis">Cbtis 224</option>
+        <option value="otra">Otra escuela</option>
+    </select><br><br> 
+
+    <label for="materias">Materias cursadas</label> <br>
+    <input type="checkbox" name="materias[]"> Física <br>
+    <input type="checkbox" name="materias[]"> Cálculo Integral <br>
+    <input type="checkbox" name="materias[]"> Inglés <br>
+    <input type="checkbox" name="materias[]"> Programación web <br>
+    <input type="checkbox" name="materias[]"> Programación del lado del servidor <br>
+    <input type="checkbox" name="materias[]"> Programación del lado del cliente <br> <br>
+
+    <label for="color">Color favorito:</label>
+    <input type="color" required><br><br>
+
+    <label for="fdp">Imagen del perfil</label>
+    <input type="file" accept="png/jpg"><br><br>
+
+    <input type="submit" value="Guardar"><br><br>
+
+    <footer>
+        <p>Alumna: Beltran Duarte Paulet Mariana <br> Practica 5 <br> 13/02/23 <br> &copy; 2023</p>
+    </footer>
+
+</body>
+</html>
