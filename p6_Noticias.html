@@ -5,18 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
+    <style>
+        .menu{
+            background-color: #4147f2;
+        }
+       .menu:hover{
+            background-color: #131780;
+       }
+       a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+       } 
+       .contenido{
+        border: 5px solid black;
+        border-radius: 10px;
+        margin-top: 15px;
+        padding: 15px;
+       }
+
+    </style>
 </head>
-<body>
-    <h1>Noticias</h1>
-    <h3>Noticia 1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deleniti alias! Repudiandae numquam voluptatibus quo delectus libero voluptate nobis reprehenderit, nisi, quae ipsa repellat fugit sit aliquid maiores eius placeat!</p>
-    <h3>Noticia 2</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus facilis voluptate consequuntur, molestias nisi alias nostrum quaerat eos, tempora tenetur! Quasi voluptas dignissimos autem velit quos porro accusantium vitae?</p>
-    <h3>Noticia 3</h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quisquam adipisci, illum incidunt quo illo. Omnis, nihil quibusdam dolorem distinctio, dolores quidem, dolore necessitatibus hic totam tempora perferendis esse molestiae.</p>
-    
-    <div style="border: 1px solid black; padding: 10px; background-color:lightcoral ;">
-    <a href="p6_Navegacion.html">Regresar a Página Principal</a>
-</div>    
+<body bgcolor="pink">
+    <h1>Navegación en HTML</h1>
+
+    <div style="border: 1px solid black; "> 
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="p6_Noticias.html">Noticias</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="p6_Galeria.html">Galería</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="p6_Contacto.html">Contacto</a>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h3>Noticia 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deleniti alias! Repudiandae numquam voluptatibus quo delectus libero voluptate nobis reprehenderit, nisi, quae ipsa repellat fugit sit aliquid maiores eius placeat!</p>
+        <h3>Noticia 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus facilis voluptate consequuntur, molestias nisi alias nostrum quaerat eos, tempora tenetur! Quasi voluptas dignissimos autem velit quos porro accusantium vitae?</p>
+        <h3>Noticia 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quisquam adipisci, illum incidunt quo illo. Omnis, nihil quibusdam dolorem distinctio, dolores quidem, dolore necessitatibus hic totam tempora perferendis esse molestiae.</p>
+
+    </div>
+
+    <footer>
+        <p>Alumna: Beltran Duarte Paulet Mariana <br> Practica 6 <br> 13/02/23 <br> &copy; 2023</p>
+    </footer>
+
 </body>
 </html>
+   

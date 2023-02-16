@@ -5,19 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
-</head>
-<body>
-    <h1>Galería de fotos</h1>
-    <div style="border: 2px solid black; padding: 20px;">
-    <img src="galletas.jpg" alt="" style="border: 1px solid black; width: 30%;">
-    <img src="dulces.jpg" alt="" style="border: 1px solid black; width: 30%;">
-    <img src="flor.jpg" alt="" style="border: 1px solid black; width: 30%;">
-</div>
-<br>
+    <style>
+        .menu{
+            background-color: #4147f2;
+        }
+       .menu:hover{
+            background-color: #131780;
+       }
+       a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+       } 
+       .contenido{
+        border: 5px solid black;
+        border-radius: 10px;
+        margin-top: 15px;
+        padding: 15px;
+       }
 
-<div style="border: 1px solid black; padding: 10px; background-color:lightcoral ;">
-    <a href="p6_Navegacion.html">Regresar a Página Principal</a>
-</div>    
+    </style>
+</head>
+<body bgcolor="pink">
+    <h1>Navegación en HTML</h1>
+
+    <div style="border: 1px solid black; "> 
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="p6_Noticias.html">Noticias</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="p6_Galeria.html">Galería</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="p6_Contacto.html">Contacto</a>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Galería de fotos</h1>
+        <div style="border: 2px solid black; padding: 20px;">
+        <img src="galletas.jpg" alt="" style="border: 1px solid black; width: 30%;">
+        <img src="dulces.jpg" alt="" style="border: 1px solid black; width: 30%;">
+        <img src="flor.jpg" alt="" style="border: 1px solid black; width: 30%;">
+    </div>
+    <br>
     
+    </div>
+    <footer>
+        <p>Alumna: Beltran Duarte Paulet Mariana <br> Practica 6 <br> 13/02/23 <br> &copy; 2023</p>
+    </footer>
+    
+      
+
 </body>
 </html>
