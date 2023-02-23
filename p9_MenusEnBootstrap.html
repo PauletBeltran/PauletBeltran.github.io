@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú en Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body style="background-color:lightgrey;">
+    <nav class="navbar navbar-expand-lg" style="background-color: orchid;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menú</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Opciones
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">le digo hola</a></li>
+                  <li><a class="dropdown-item" href="#">y ella me dice gudbai</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ADIOS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">no se para q es este</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Bienvenido, ahora dame 5 pesos</h5>
+                      <p class="card-text">pero si caben o no¿</p>
+                      <a href="https://www.youtube.com/watch?v=POe9SOEKotk" class="btn btn-primary">Stream Shut Down</a>
+                    </div>
+                  </div> 
+            </div>
+        </div>
+      </div>
+      <br>
+      <center><div>
+        <img src="readyforlove.png" alt="" width="35%">
+     </div></center>
+
+      <footer class="fixed-bottom text-center p-2 card">
+        Alumna: Beltran Duarte Paulet Mariana Practica 9 22/02/23 &copy; 2023
+      </footer>
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>   
+</body>
+</html>
