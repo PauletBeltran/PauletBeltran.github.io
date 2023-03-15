@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .navbar-brand{
+          font-family: 'Times New Roman';
+        }
+        h1{
+        text-align: center;
+        font-family: 'Times New Roman';
+        font-weight: bold;
+        color: darkgoldenrod;
+        text-shadow: 3px 0px 7px grey;
+        }
+        h5{
+            text-align: center;
+            font-style: italic;
+            font-size: medium;
+        }
+      </style>
+</head>
+<body>
+    <body style="background-color:lightgrey;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg" style="background-color: cornflowerblue;">
+                <div class="container-fluid">
+                    <b><a class="navbar-brand">
+                        <img src="Logo_oso.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Mundo Peluches
+                      </a></b>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="acercadenosotros.html">Acerca de nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contactanos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.instagram.com/mundopeluchestienda/"style=""target="_blank">Instagram</a></li>
+                          <li><a class="dropdown-item" href="mailto:mundopeluchesculiacan@gmail.com">Atención al cliente</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <br>
+              <h1>Crea una cuenta</h1>
+              <h5>Para poder hacer una orden, debes tener una cuenta en Mundo Peluches</h5><hr>
+              <br>
+
+              <h4>Ingresa tu nombre de usuario:</h4>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <br>
+
+              <h4>Ingresa tu correo electrónico:</h4>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Username">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="ejemplo.com" aria-label="Server">
+              </div>
+              <br>
+
+              <h4>Ingresa tu fecha de nacimiento:</h4>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Fecha</span>
+                <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <br>
+
+              <h4>Ingresa tu contraseña:</h4>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Contraseña" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <br>
+
+              <h4>Ingresa tu sexo:</h4>
+              <div class="input-group mb-3">
+                <select class="form-select" id="inputGroupSelect02">
+                  <option selected>Ingresa tu sexo</option>
+                  <option value="1">Masculino</option>
+                  <option value="2">Femenino</option>
+                  <option value="3">Prefiero no decirlo</option>
+                </select>
+                <label class="input-group-text" for="inputGroupSelect02">Opciones</label>
+              </div>
+              <br>
+
+              <h4>Ingresa tu número de teléfono:</h4>
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Número de telefono" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <br>
+
+              <center><button type="button" class="btn btn-outline-success">Crear Cuenta</button></center>
+              <br>
+          </div>
+             
+              
+
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>          
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Peluches</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+      .navbar-brand{
+        font-family: 'Times New Roman';
+      }
+      .productos{
+        text-align: center;
+        font-family: 'Times New Roman';
+        font-weight: bold;
+        color: darkgoldenrod;
+        text-shadow: 3px 0px 7px grey;
+      }
+      .titulo{
+        text-align: center;
+        font-family: 'Times New Roman';
+        font-weight: bold;
+        color: darkgoldenrod;
+        text-shadow: 3px 0px 7px grey;
+        padding: 1%;
+      }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body style="background-color:lightgrey;">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg" style="background-color: cornflowerblue;">
+          <div class="container-fluid">
+              <b><a class="navbar-brand">
+                  <img src="Logo_oso.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                  Mundo Peluches
+                </a></b>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="acercadenosotros.html">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contactanos
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.instagram.com/mundopeluchestienda/"style=""target="_blank">Instagram</a></li>
+                    <li><a class="dropdown-item" href="mailto:mundopeluchesculiacan@gmail.com">Atención al cliente</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <a type="button" class="btn btn-primary position-relative" style="background-color: goldenrod;" href="registrate.html">
+                Registrate
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="row">
+          <h1 class="titulo">
+            ¿Listo para conocer a tu nuevo compañero?
+          </h1>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="compañero.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Un pelcuhe</h5>
+                    <p>Es el mejor compañero de un pequeño.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="osito.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Lindos y amigables</h5>
+                    <p>Dile "hola" a tu nuevo amigo.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="tipos.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Variedad</h5>
+                    <p>Tenemos distintos y esponjosos peluches.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+  </div>
+  <br>
+  <div class="row mt-2">
+    <h3 class="productos">Productos disponibles</h3><hr>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="cafe.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Osito "Coffee"</h5>
+          <p class="card-text">Oso de peluche color café, tamaño mediano.</p>
+          <h4 class="mt-1 text-center">$115</h4>
+          <a href="#" class="btn btn-primary" style="background-color: goldenrod;">Añadir al carrito</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="packamigos.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pack "Mejores amigos"</h5>
+          <p class="card-text">Pack de dos peluches color café que tienen velcro en las manos, ¡pueden abrazarse!</p>
+          <h4 class="mt-1 text-center">$374</h4>
+          <a href="#" class="btn btn-primary" style="background-color: goldenrod;">Añadir al carrito</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="enfermito.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Peluche "Ayudame, doctor"</h5>
+          <p class="card-text">Osito de peluche que incluye un paquete de instrumentos médicos de juguete para sanar su enfermedad.</p>
+          <h4 class="mt-1 text-center">$267</h4>
+          <a href="#" class="btn btn-primary" style="background-color: goldenrod;">Añadir al carrito</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="chayanne.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chayanne chiquito</h5>
+          <p class="card-text">Peluche exclusivo de nuestro papá perdido Chayanne. Presume a todos que tienes un Chayanne chiquito.</p>
+          <h4 class="mt-1 text-center">$500</h4>
+          <a href="#" class="btn btn-primary" style="background-color: goldenrod;">Añadir al carrito</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
