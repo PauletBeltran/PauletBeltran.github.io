@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-04-2023 a las 02:49:39
+-- Tiempo de generación: 22-04-2023 a las 03:08:45
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -40,7 +40,8 @@ CREATE TABLE `albumes` (
 
 INSERT INTO `albumes` (`id`, `artista_id`, `nombre`) VALUES
 (1, 1, 'Witness'),
-(2, 2, 'The Album');
+(2, 2, 'The Album'),
+(3, 3, 'Secreto de amor');
 
 -- --------------------------------------------------------
 
@@ -60,7 +61,17 @@ CREATE TABLE `album_canciones` (
 
 INSERT INTO `album_canciones` (`id`, `album_id`, `canciones_id`) VALUES
 (1, 1, 1),
-(2, 2, 2);
+(2, 2, 2),
+(3, 2, 3),
+(4, 2, 4),
+(5, 2, 5),
+(6, 2, 6),
+(7, 2, 7),
+(9, 2, 8),
+(10, 2, 9),
+(11, 3, 12),
+(12, 3, 11),
+(13, 3, 10);
 
 -- --------------------------------------------------------
 
@@ -80,7 +91,8 @@ CREATE TABLE `artistas` (
 
 INSERT INTO `artistas` (`id`, `nombre`, `imagen`) VALUES
 (1, 'Katy Perry', 'https://upload.wikimedia.org/wikipedia/commons/5/52/Katy_Perry_performing_Vegas_residency_%28cropped%29.png'),
-(2, 'Blackpink', 'https://media.admagazine.com/photos/623239bb3d27b630fcc295a7/3:2/w_2528,h_1685,c_limit/BLACKPINK.jpg');
+(2, 'Blackpink', 'https://media.admagazine.com/photos/623239bb3d27b630fcc295a7/3:2/w_2528,h_1685,c_limit/BLACKPINK.jpg'),
+(3, 'Joan Sebastian', 'https://i.scdn.co/image/ab67616d0000b273cca7e87e6401eb7e41804294');
 
 -- --------------------------------------------------------
 
@@ -104,7 +116,17 @@ CREATE TABLE `canciones` (
 
 INSERT INTO `canciones` (`id`, `nombre`, `artista_id`, `duracion`, `genero_id`, `fecha`, `disponible`) VALUES
 (1, 'Swish Swish', 1, '04:03:00', 1, '2017-08-21', 1),
-(2, 'Crazy over you', 2, '02:43:00', 2, '2020-10-01', 1);
+(2, 'Crazy over you', 2, '02:43:00', 2, '2020-10-01', 1),
+(3, 'How you like that', 2, '03:02:00', 2, '2020-10-01', 1),
+(4, 'Ice Cream', 2, '02:56:00', 2, '2020-10-01', 1),
+(5, 'Pretty Savage', 2, '03:19:00', 2, '2020-10-01', 1),
+(6, 'Bet you wanna', 2, '02:39:00', 2, '2020-10-01', 1),
+(7, 'Lovesick Girls', 2, '03:13:00', 2, '2020-10-01', 1),
+(8, 'Love to hate me', 2, '02:50:00', 2, '2020-10-01', 1),
+(9, 'you never know', 2, '03:49:00', 2, '2020-10-01', 1),
+(10, 'con besos', 3, '03:30:00', 3, '2000-04-25', 1),
+(11, 'Un idiota', 3, '03:20:00', 3, '2000-04-25', 1),
+(12, 'Secreto de amor', 3, '04:33:00', 3, '2000-04-25', 1);
 
 -- --------------------------------------------------------
 
@@ -124,7 +146,9 @@ CREATE TABLE `fav` (
 
 INSERT INTO `fav` (`id`, `usuario_id`, `cancion_id`) VALUES
 (1, 1, 2),
-(2, 2, 1);
+(2, 2, 1),
+(3, 3, 11),
+(4, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -143,7 +167,9 @@ CREATE TABLE `generos` (
 
 INSERT INTO `generos` (`id`, `nombre`) VALUES
 (1, 'pop'),
-(2, 'kpop');
+(2, 'kpop'),
+(3, 'Regional Mexicana'),
+(4, 'Pop alternativo');
 
 -- --------------------------------------------------------
 
@@ -163,7 +189,9 @@ CREATE TABLE `membresia` (
 
 INSERT INTO `membresia` (`id`, `nombre`, `precio`) VALUES
 (1, 'Basico', 50),
-(2, 'Premium', 159);
+(2, 'Premium', 159),
+(3, 'Plus', 200),
+(4, 'Gratis', 0);
 
 -- --------------------------------------------------------
 
@@ -184,7 +212,8 @@ CREATE TABLE `playlist` (
 
 INSERT INTO `playlist` (`id`, `nombre`, `imagen`, `usuario_id`) VALUES
 (1, 'mi playlist', 'https://blogs.21rs.es/corazones/files/2015/06/si.png', 1),
-(2, 'si', 'https://pbs.twimg.com/media/EnVweAdXIAMxXe9.png', 2);
+(2, 'si', 'https://pbs.twimg.com/media/EnVweAdXIAMxXe9.png', 2),
+(3, 'dolida', 'https://concepto.de/wp-content/uploads/2018/08/f%C3%ADsica-e1534938838719.jpg', 3);
 
 -- --------------------------------------------------------
 
@@ -205,7 +234,13 @@ CREATE TABLE `playlist_canciones` (
 INSERT INTO `playlist_canciones` (`id`, `playlist_id`, `cancion_id`) VALUES
 (1, 1, 2),
 (2, 2, 1),
-(3, 1, 1);
+(3, 1, 1),
+(4, 1, 4),
+(5, 1, 8),
+(6, 1, 9),
+(7, 3, 11),
+(8, 3, 12),
+(9, 3, 10);
 
 -- --------------------------------------------------------
 
@@ -229,7 +264,8 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `contrasena`, `usuario`, `telefono`, `membresia_id`) VALUES
 (1, 'Paulet', 'paulet@gmail.com', 'paupaupau123', 'paupau', '6675848596', 1),
-(2, 'rene', 'rene@gmail.com', 'rene123', 'telepatio', '6658471254', 2);
+(2, 'rene', 'rene@gmail.com', 'rene123', 'telepatio', '6658471254', 2),
+(3, 'marisela', 'ilovefisica@gmail.com', 'fisicamylove', 'Marisela', '6658874125', 2);
 
 --
 -- Índices para tablas volcadas
@@ -314,61 +350,61 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `albumes`
 --
 ALTER TABLE `albumes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `album_canciones`
 --
 ALTER TABLE `album_canciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `artistas`
 --
 ALTER TABLE `artistas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `canciones`
 --
 ALTER TABLE `canciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `fav`
 --
 ALTER TABLE `fav`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `generos`
 --
 ALTER TABLE `generos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `membresia`
 --
 ALTER TABLE `membresia`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `playlist`
 --
 ALTER TABLE `playlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `playlist_canciones`
 --
 ALTER TABLE `playlist_canciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restricciones para tablas volcadas
