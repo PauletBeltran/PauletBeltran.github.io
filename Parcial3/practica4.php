@@ -1,6 +1,8 @@
 <?php
 
 $nombre = $_POST["nombre"];
+echo "<h3> Alumno: ".$nombre."</h3>";
+
 $calificacion = 0;
 
 $pregunta1 = $_POST["pregunta1"];
