@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5</title>
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            font-size: 30px;
+            border: 0;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body style="width: 19%;">
+    <h1>juego del gato</h1>
+        <form action="practica5.php" method="POST">
+            <table>
+                <tr style="">
+                    <td><input type="text" name="cuadro[]" value="X"></td>
+                    <td><input type="text" name="cuadro[]" value="O"></td>
+                    <td><input type="text" name="cuadro[]" value="O"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="cuadro[]" value="O"></td>
+                    <td><input type="text" name="cuadro[]" value="X"></td>
+                    <td><input type="text" name="cuadro[]" value="X"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="cuadro[]" value="O"></td>
+                    <td><input type="text" name="cuadro[]" value="X"></td>
+                    <td><input type="text" name="cuadro[]" value="O"></td>
+                </tr>
+            </table><br>
+
+            <input type="submit" value="revisar">
+        </form>
+</body>
+
+</html>
