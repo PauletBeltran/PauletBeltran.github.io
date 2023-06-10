@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Configurar juego Ahorcado</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<body>
+<body style="background-color: antiquewhite;"> 
     <div class="container">
         <div class="row">
-            <h1>Configurar Juego:</h1><hr>
+            <center><h1>Configurar Juego</h1><hr><br>
             <form action="practica6.php" method="POST">
                 <div class="form-group">
-                    <label for="">Nombre del jugador:</label>
-                    <input type="text" required name="jugador" class="form-control" style="background-color:  rgb(231, 209, 179);">
+                   <center><label for="">Nombre del jugador:</label></center> 
+                    <center><input type="text" required name="jugador" class="form-control" style="background-color: rgb(218, 187, 146);"></center>
                 </div><br>
                 <div class="form-group">
-                    <label for="">Palabra:</label>
-                    <input type="text" required name="palabra" class="form-control"  style="background-color:  rgb(231, 209, 179);">
+                    <center><label for="">Palabra:</label></center>
+                    <center><input type="text" required name="palabra" class="form-control" style="background-color: rgb(218, 187, 146);"></center>
                 </div><br>
                 <div class="form-group">
-                    <label for="">Vidas:</label>
-                    <input type="number" required name="vidas" class="form-control"  style="background-color:  rgb(231, 209, 179);">
+                    <center><label for=""># vidas:</label></center>
+                    <center><input type="number" required name="vidas" class="form-control" style="background-color: rgb(218, 187, 146);"></center>
                 </div><br>
                 <div>
-                    <input type="submit" class="btn btn-primary" style="background-color: rgb(145, 108, 91); border: 3px sienna;">
+                    <input type="submit" class="btn btn-primary" style="background-color: rgb(109, 61, 14); border: 0px;" >
                 </div>
             </form>
         </div>
     </div>
-    
 </body>
 </html>
