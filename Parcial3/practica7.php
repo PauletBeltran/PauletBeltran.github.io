@@ -31,7 +31,8 @@
     ?>
     <div class="container">
          <h1>Tablero de serpientes y escaleras</h1><hr>
-            <form action=""> 
+            <form action="practica7.php" method="POST"> 
+                <input type="submit" value="jugar" class="btn btn-primary"><hr>
                 <div class="row">
                     <?php
                     for($i=100; $i>0; $i--){
