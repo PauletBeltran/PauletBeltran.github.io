@@ -28,8 +28,7 @@
                     $carta2 = $_POST["carta2"];
                     //Aquí empieza la lógica del juego
                     $carta = rand(1,54);
-                    $cartas_dadas = [];
-                    array_push($cartas_dadas, $carta);
+                    echo "<h2>Carta dada <img src='fotos_loteria/".$carta.".jpeg' class='img-fluid' width='100px'></h2>";
                 }else{
                     $carta1 = [];
                     $total = 0;
@@ -60,14 +59,9 @@
                     <?php
                             //Pintar carta 1
                     for($i=0; $i<16; $i++){
-                        $numero = rand(1,54);
-                        if(array_search($carta1[$i], $cartas_dadas) === false){
-                            echo "<div class='col-3 p-0'><img src='fotos_loteria/". $carta1[$i].".jpeg' class='img-thumbnail'></div>";                            
-                        }else{
-                            echo "<div class='col-3 p-0 fichita'><img src='fotos_loteria/". $carta1[$i].".jpeg' class='img-thumbnail'></div>"; 
-                        }
-                        echo "<input type='hidden' name='cartas_dadas[]' value=''".$carta . "'>";
-                        echo "<input type='hidden' name='carta1[]' value=''".$carta1[$i] . "'>";
+                         $numero = rand(1,54);
+                    echo "<div class='col-3 p-0'><img src='fotos_loteria/". $carta1[$i].".jpeg' class='img-thumbnail'></div>";
+                    echo "<input type='hidden' name='carta1[]' value='".$carta1[$i] . "'>";
                     }
                     ?>                
                 </div>
@@ -80,7 +74,7 @@
                 for($i=0; $i<16; $i++){
                     $numero = rand(1,54);
                     echo "<div class='col-3 p-0'><img src='fotos_loteria/". $carta2[$i].".jpeg' class='img-thumbnail'></div>";
-                    echo "<input type='hidden' name='carta2[]' value=''".$carta2[$i] . "'>";
+                    echo "<input type='hidden' name='carta2[]' value='".$carta2[$i] . "'>";
                 }
                 ?> 
                 </div>
