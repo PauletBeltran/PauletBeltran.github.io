@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra papel o tijeras</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="juego.js"></script>
+</head>
+
+<body style="background-color: rgb(218, 206, 180);">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="jugador.png" alt="jugador" id="jugador" class="img-fluid"
+                    style="position: absolute; width: 250px; height: 250px; top: 100px;">
+                <img src="VS.png" class="img-fluid"
+                    style="position: absolute; width: 150px; height: 170px; top: 210px; left: 585px;">
+                <img src="cpu.png" alt="cpu" id="cpu" class="img-fluid"
+                    style="position: absolute; width: 250px; height: 250px; top: 100px; left: 950px;">
+                <h2 style="position: absolute; width: 250px; height: 250px; top: 350px; left: 175px;">
+                    <i><b>JUGADOR</b></i></h2>
+                <h2 style="position: absolute; width: 250px; height: 250px; top: 350px; left: 950px;">
+                    <i><b>COMPUTADORA</b></i></h2>
+
+                <button type="button" class="btn btn-secondary" id="boton_piedra" data-id="piedra"
+                    style="position: absolute; width: 150px; height: 60px; top: 500px; left: 180px;">PIEDRA</button>
+                <button type="button" class="btn btn-light" id="boton_papel"  data-id="papel"
+                    style="position: absolute; width: 150px; height: 60px; top: 500px; left: 590px;">PAPEL</button>
+                <button type="button" class="btn btn-danger" id="boton_tijera"  data-id="tijera"
+                    style="position: absolute; width: 150px; height: 60px; top: 500px; left: 1000px;">TIJERAS</button>
+                <button type="button" class= "btn btn-warning" id="Refresh" data-id="reinicio" 
+                    style="display: none; position: absolute; width: 150px; height: 60px; top: 600pX; left: 590px;" onclick="location.reload()">REINICIO</button>
+
+                    <h2 style="position:absolute; top: 45px; left: 150px;"><i>Contador: <span id="contador_jugador">0</span></i></h2>
+                    <h2 style="position: absolute; top: 45px; left: 1000px;"><i>Contador: <span id="contador_cpu">0</span></i></h2>
+                    <div style="display: none;" id="empate">
+                        <h3 style="width: 250px; height: 250px; position: absolute; left: 609px; top: 60px;"><i>¡EMPATE!</i></h3>
+                    </div>
+                    <div style="display: none;" id="juego_finalizado">
+                        <h3 style="width: 250px; height: 250px; position: absolute; left: 609px; top: 60px;"><i>¡JUEGO FINALIZADO!</i></h3>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
